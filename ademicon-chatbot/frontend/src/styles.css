@@ -1,0 +1,50 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #202124;
+  background: #f5f6f8;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, select { font: inherit; }
+.page { max-width: 1120px; margin: auto; padding: 28px 22px 18px; }
+.brand { display: flex; align-items: center; gap: 12px; color: #191919; }
+.brand-mark { width: 48px; height: 48px; border: 3px solid #c51f2b; color: #c51f2b; border-radius: 14px 14px 14px 3px; display: grid; place-items: center; font-size: 27px; font-weight: 900; }
+.brand strong { display: block; letter-spacing: 2px; font-size: 21px; }
+.brand span { display: block; font-size: 12px; color: #666; margin-top: 2px; }
+.intro { padding: 42px 0 28px; max-width: 650px; }
+.eyebrow { color: #bd1e2d; font-size: 11px; font-weight: 800; letter-spacing: 1.8px; }
+h1 { font-size: clamp(36px, 6vw, 58px); line-height: 1.03; margin: 10px 0; }
+h1 em { color: #bd1e2d; font-style: normal; }
+.intro > p:last-child, .lead > p { color: #65676b; line-height: 1.6; }
+.content { display: grid; grid-template-columns: 1.35fr 0.85fr; gap: 20px; align-items: start; }
+.card { background: white; border: 1px solid #e7e7e9; border-radius: 18px; box-shadow: 0 10px 30px #1717170b; overflow: hidden; }
+.chat-head { background: #b91f2c; color: white; display: flex; gap: 12px; align-items: center; padding: 17px 20px; }
+.avatar { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: white; color: #b91f2c; font-weight: 800; }
+.chat-head small { display: block; opacity: .9; margin-top: 5px; }
+.chat-head i { display: inline-block; width: 7px; height: 7px; background: #72e5a0; border-radius: 50%; margin-right: 5px; }
+.messages { height: 340px; overflow-y: auto; padding: 18px; display: flex; flex-direction: column; gap: 12px; background: #fafafa; }
+.message { max-width: 88%; border-radius: 14px; padding: 12px 14px; font-size: 14px; line-height: 1.55; white-space: normal; }
+.message.bot { background: white; border: 1px solid #e8e8e8; align-self: flex-start; }
+.message.user { background: #b91f2c; color: white; align-self: flex-end; }
+.quick-options { display: flex; gap: 8px; padding: 12px 16px 0; }
+.quick-options button { border: 1px solid #e4c4c7; color: #a71927; background: white; border-radius: 20px; padding: 7px 13px; cursor: pointer; }
+.send { display: flex; gap: 8px; padding: 12px 16px 16px; }
+.send input, .lead input, .lead select { width: 100%; border: 1px solid #dddfe3; border-radius: 9px; padding: 12px; outline-color: #bd1e2d; background: white; }
+.send button, .primary { border: 0; border-radius: 9px; background: #bd1e2d; color: white; padding: 0 18px; font-weight: 700; cursor: pointer; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+.lead { padding: 22px; }
+.lead h2 { margin: 8px 0; font-size: 24px; }
+.lead form { display: grid; gap: 13px; margin-top: 18px; }
+.lead label { display: grid; gap: 7px; font-size: 13px; font-weight: 700; }
+.primary { padding: 13px; }
+.status { color: #276c42; font-size: 13px; }
+.whatsapp { display: block; text-align: center; margin-top: 12px; padding: 12px; color: #176b3a; background: #eaf8ef; border-radius: 9px; text-decoration: none; font-weight: 700; font-size: 14px; }
+footer { text-align: center; color: #555; padding: 28px 0 8px; line-height: 1.7; }
+footer small { color: #777; font-size: 11px; }
+@media (max-width: 760px) {
+  .page { padding: 20px 14px; }
+  .intro { padding: 32px 0 20px; }
+  .content { grid-template-columns: 1fr; }
+  .messages { height: 310px; }
+}
